@@ -1,8 +1,7 @@
-import 'dart:ui';
+import 'package:dicoding1/view/pages/home_page.dart';
 import 'package:dicoding1/view/pages/intro_screen/intro_page_1.dart';
 import 'package:dicoding1/view/pages/intro_screen/intro_page_2.dart';
 import 'package:dicoding1/view/pages/intro_screen/intro_page_3.dart';
-import 'package:dicoding1/view/widgets/widget_tree.dart';
 import 'package:flutter/material.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
@@ -70,7 +69,7 @@ class _SplashScreenState extends State<SplashScreen> {
                           Navigator.pushReplacement(
                             context,
                             MaterialPageRoute(
-                              builder: (context) => const WidgetTree(),
+                              builder: (context) => const HomePage(),
                             ),
                           );
                         },
