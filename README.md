@@ -1,4 +1,4 @@
-# dicoding1
+# lotso_app
 
 A new Flutter project.
 

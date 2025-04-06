@@ -1,4 +1,4 @@
-package com.example.dicoding1
+package com.example.lotso_app
 
 import io.flutter.embedding.android.FlutterActivity
 

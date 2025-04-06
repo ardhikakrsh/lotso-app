@@ -1,8 +1,8 @@
-import 'package:dicoding1/components/card_tile.dart';
-import 'package:dicoding1/components/explore_banner.dart';
-import 'package:dicoding1/components/my_drawer.dart';
-import 'package:dicoding1/components/search.dart';
-import 'package:dicoding1/view/pages/cart_page.dart';
+import 'package:lotso_app/components/card_tile.dart';
+import 'package:lotso_app/components/explore_banner.dart';
+import 'package:lotso_app/components/my_drawer.dart';
+import 'package:lotso_app/components/search.dart';
+import 'package:lotso_app/view/pages/cart_page.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatelessWidget {

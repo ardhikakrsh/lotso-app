@@ -1,4 +1,4 @@
-import 'package:dicoding1/view/pages/splash_screen.dart';
+import 'package:lotso_app/view/pages/splash_screen.dart';
 import 'package:flutter/material.dart';
 
 class MyDrawer extends StatelessWidget {

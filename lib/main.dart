@@ -1,4 +1,4 @@
-import 'package:dicoding1/view/pages/splash_screen.dart';
+import 'package:lotso_app/view/pages/splash_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Lotso App',
       debugShowCheckedModeBanner: false,
       home: SplashScreen(),
     );
