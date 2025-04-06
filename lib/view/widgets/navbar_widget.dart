@@ -1,3 +1,4 @@
+import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter/material.dart';
 
 class NavbarWidget extends StatelessWidget {
@@ -5,24 +6,24 @@ class NavbarWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return BottomAppBar(
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        children: [
-          IconButton(
-            icon: const Icon(Icons.home),
-            onPressed: () {},
-          ),
-          IconButton(
-            icon: const Icon(Icons.search),
-            onPressed: () {},
-          ),
-          IconButton(
-            icon: const Icon(Icons.settings),
-            onPressed: () {},
-          ),
-        ],
-      ),
+    return CurvedNavigationBar(
+      backgroundColor: const Color.fromARGB(255, 206, 60, 107),
+      height: 70,
+      color: Colors.white,
+      items: const [
+        Icon(
+          Icons.home,
+          color: Color.fromARGB(255, 206, 60, 107),
+        ),
+        Icon(
+          Icons.search,
+          color: Color.fromARGB(255, 206, 60, 107),
+        ),
+        Icon(
+          Icons.favorite,
+          color: Color.fromARGB(255, 206, 60, 107),
+        ),
+      ],
     );
   }
 }
