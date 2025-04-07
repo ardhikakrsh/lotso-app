@@ -39,7 +39,8 @@ class CardTile extends StatelessWidget {
 
           // Add padding to the card (optional, adjust as needed
           padding: const EdgeInsets.all(14.0),
-          child: Card(
+          child: ClipRRect(
+            borderRadius: BorderRadius.circular(8),
             child: Image.asset(
               imagePath,
               fit: BoxFit.cover,
