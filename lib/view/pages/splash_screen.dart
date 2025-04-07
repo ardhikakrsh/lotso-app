@@ -1,4 +1,6 @@
-import 'package:lotso_app/view/pages/home_page.dart';
+import 'package:lotso_app/components/done_button.dart';
+import 'package:lotso_app/components/next_button.dart';
+import 'package:lotso_app/components/previous_button.dart';
 import 'package:lotso_app/view/pages/intro_screen/intro_page_1.dart';
 import 'package:lotso_app/view/pages/intro_screen/intro_page_2.dart';
 import 'package:lotso_app/view/pages/intro_screen/intro_page_3.dart';
@@ -42,62 +44,14 @@ class _SplashScreenState extends State<SplashScreen> {
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 // previous button
-                GestureDetector(
-                  onTap: () {
-                    _controller.previousPage(
-                      duration: const Duration(milliseconds: 500),
-                      curve: Curves.easeIn,
-                    );
-                  },
-                  child: const Text(
-                    'Back',
-                    style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 16,
-                      fontWeight: FontWeight.w600,
-                    ),
-                  ),
-                ),
-
+                PreviousButton(controller: _controller),
                 // dot indicator
                 SmoothPageIndicator(controller: _controller, count: 3),
 
                 // next button
                 isLastPage
-                    ? GestureDetector(
-                        onTap: () {
-                          Navigator.pushReplacement(
-                            context,
-                            MaterialPageRoute(
-                              builder: (context) => const HomePage(),
-                            ),
-                          );
-                        },
-                        child: const Text(
-                          'Done',
-                          style: TextStyle(
-                            color: Colors.white,
-                            fontSize: 16,
-                            fontWeight: FontWeight.w600,
-                          ),
-                        ),
-                      )
-                    : GestureDetector(
-                        onTap: () {
-                          _controller.nextPage(
-                            duration: const Duration(milliseconds: 500),
-                            curve: Curves.easeIn,
-                          );
-                        },
-                        child: const Text(
-                          'Next',
-                          style: TextStyle(
-                            color: Colors.white,
-                            fontSize: 16,
-                            fontWeight: FontWeight.w600,
-                          ),
-                        ),
-                      ),
+                    ? const DoneButton()
+                    : NextButton(controller: _controller)
               ],
             ),
           )

@@ -43,10 +43,12 @@ class ExploreBanner extends StatelessWidget {
               const SizedBox(height: 20),
               ElevatedButton(
                 onPressed: () {},
-                child: const Text('Explore',
-                    style: TextStyle(
-                      color: Color.fromARGB(255, 206, 60, 107),
-                    )),
+                child: const Text(
+                  'Explore',
+                  style: TextStyle(
+                    color: Color.fromARGB(255, 206, 60, 107),
+                  ),
+                ),
               ),
             ],
           ),
