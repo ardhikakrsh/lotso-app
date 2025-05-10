@@ -1,7 +1,13 @@
-import 'package:lotso_app/view/pages/splash_screen.dart';
+import 'package:firebase_core/firebase_core.dart';
+import 'package:lotsoApp/firebase_options.dart';
+import 'package:lotsoApp/view/pages/splash_screen.dart';
 import 'package:flutter/material.dart';
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
   runApp(const MyApp());
 }
 
