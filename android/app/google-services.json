@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1051720751921",
+    "project_id": "lotso-app",
+    "storage_bucket": "lotso-app.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1051720751921:android:c120def522c72b69ea2e10",
+        "android_client_info": {
+          "package_name": "com.example.lotsoApp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB2mJa8APsp36vYdwKTnAk_NDxP2IsxV4g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1051720751921:android:8a6282e3f7db47b7ea2e10",
+        "android_client_info": {
+          "package_name": "com.example.lotso_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB2mJa8APsp36vYdwKTnAk_NDxP2IsxV4g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

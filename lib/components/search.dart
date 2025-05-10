@@ -18,7 +18,8 @@ class Search extends StatelessWidget {
           child: TextField(
             decoration: InputDecoration(
               hintText: 'Search',
-              prefixIcon: const Icon(Icons.search),
+              hintStyle: const TextStyle(color: Colors.white),
+              prefixIcon: const Icon(Icons.search, color: Colors.white),
               border: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(15),
                 borderSide: const BorderSide(color: Colors.white),

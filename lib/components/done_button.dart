@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:lotso_app/view/pages/home_page.dart';
+import 'package:lotsoApp/service/auth/welcome_page.dart';
 
 class DoneButton extends StatelessWidget {
   const DoneButton({super.key});
@@ -8,10 +8,10 @@ class DoneButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {
-        Navigator.pushReplacement(
+        Navigator.push(
           context,
           MaterialPageRoute(
-            builder: (context) => const HomePage(),
+            builder: (context) => const WelcomePage(),
           ),
         );
       },

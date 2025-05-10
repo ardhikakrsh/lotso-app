@@ -1,4 +1,4 @@
-import 'package:lotso_app/view/pages/splash_screen.dart';
+import 'package:lotsoApp/view/pages/splash_screen.dart';
 import 'package:flutter/material.dart';
 
 class MyDrawer extends StatelessWidget {
@@ -17,11 +17,15 @@ class MyDrawer extends StatelessWidget {
               decoration: BoxDecoration(
                 color: Color.fromARGB(255, 206, 60, 107),
               ),
-              child: Text(
-                'Lotso World',
-                style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 24,
+              child: Center(
+                child: Text(
+                  'Lotso World',
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 24,
+                    fontWeight: FontWeight.bold,
+                    letterSpacing: 1.5,
+                  ),
                 ),
               ),
             ),
